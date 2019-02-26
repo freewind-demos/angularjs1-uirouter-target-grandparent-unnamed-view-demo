@@ -2,7 +2,7 @@
 <head>
     <style>
         .active {
-            color: red;
+            color: coral;
             font-weight: bold;
         }
     </style>
@@ -14,9 +14,10 @@
 <div>
     Choose:
     <ul>
-        <li><a ui-sref="parent" ui-sref-active="active">Parent (state: parent)</a></li>
-        <li><a ui-sref="parent.child" ui-sref-active="active">Child (state: parent.child)</a></li>
-        <li><a ui-sref="child" ui-sref-active="active">Not Real Child (state: child)</a></li>
+        <li><a ui-sref="grandparent" ui-sref-active="active">grandparent</a></li>
+        <li><a ui-sref="grandparent.parent" ui-sref-active="active">grandparent.parent</a></li>
+        <li><a ui-sref="grandparent.parent.child" ui-sref-active="active">grandparent.parent.child</a></li>
+        <li><a ui-sref="grandparent.parent.naughtyChild" ui-sref-active="active">grandparent.parent.naughtyChild</a></li>
     </ul>
     <ui-view></ui-view>
 </div>
