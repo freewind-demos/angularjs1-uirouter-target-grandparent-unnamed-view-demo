@@ -5,7 +5,7 @@ AngularJS1 "@uirouter" Target GrandeParent UnNamed View Demo
 
 ```
 npm install
-npm run demo
+npm start
 ```
 
 Documentation
